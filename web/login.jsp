@@ -4,7 +4,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
     <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <script src="js/jquery-1.5.2.min.js"></script>
+
     <title>软通动力人力资源自助管理系统</title>
+
 </head>
 
 <body>
