@@ -8,9 +8,25 @@
 
     <title>软通动力人力资源自助管理系统</title>
 
+    <script>
+     function  su()
+     {
+        var userName=document.getElementById("userName").value;
+        if(userName=="")
+        {
+            alert("请输入用户名");
+            return false;
+        }
+        var a=document.createElement("a");
+        a.href="/hrManage/loginServlet";
+        document.body.appendChild(a);
+        a.click();
+     }
+    </script>
 </head>
 
 <body>
+
 <table class="loginTab">
     <tr>
         <td class="loginTop"></td>
@@ -30,7 +46,7 @@
                                     <table>
                                         <tr height="30">
                                             <td width="21%"><span class="STYLE1">用户</span></td>
-                                            <td width="79%"><input type="text" name="textfield"></td>
+                                            <td width="79%"><input type="text" id="userName"></td>
                                         </tr>
                                         <tr height="30">
                                             <td><span class="STYLE1" >密码</span></td>
@@ -38,7 +54,7 @@
                                         </tr>
                                         <tr height="30">
                                             <td></td>
-                                            <td><img src="images/dl.gif" width="81" height="22" border="0" usemap="#Map"></td>
+                                            <td><img src="images/dl.gif" width="81" height="22" border="0" onclick="su()"></td>
                                         </tr>
                                     </table>
                                 </td>
@@ -77,6 +93,4 @@
         <td class="loginBottom"></td>
     </tr>
 </table>
-
-<map name="Map"><area shape="rect" coords="3,3,36,19" href="index.html"><area shape="rect" coords="40,3,78,18" href="#"></map></body>
 </html>
